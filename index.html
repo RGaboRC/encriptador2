@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Encriptador</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="caja">
+				<a href="https://www.aluracursos.com/"> <img class="alura" src="recursos/alura.png" width="40px" alt="logo alura"></a>
+				<h1>Encriptador</h1>
+				<a href="https://www.oracle.com/mx/education/oracle-next-education/"> <img class="ONE" src="recursos/one.png" alt="logo de ONE"></a>
+			</div>
+		</header>
+
+		<main>
+			<section class="contenedor">
+				<div class="input-texto">
+					<textarea cols="70" rows="10" id="encriptador-texto"  class="encriptador-texto" required placeholder="Introduce aquí el texto"></textarea>
+					<div class="contendor-botones">
+						<div class="warning">
+							<img src="recursos/alert.svg" alt="warning">
+							<p>&nbsp Solo letras minúsculas y sin acentos</p>
+						</div>
+						<div class="botones">
+						<button id="boton" class="boton-uno" onclick="encritpar()">Encriptar</button>
+						<button id="boton" class="boton-dos" onclick="desencriptar()">Desencriptar</button>
+						</div>
+					</div>
+				</div>
+			 	<div class="respuesta-contenedor">
+                	<div class="respuesta-fondo" id="respuesta-fondo">
+                        <img  class="muheco" src="recursos/Muñeco.png" alt="muneco">
+                        <h2>Ningun mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                  	</div>
+                    <div class="resultado_salida" id="resutado-salida">
+                        <textarea class="salida-texto" id="salida-texto" ></textarea>
+                        <button class="boton-copiar" onclick="copiar()" id="boton-copiar" >Copiar</button>
+                    </div>
+                </div>
+            </div>
+            </section>
+		</main>
+
+		<footer>
+			<a href="https://github.com/RGaboRC"> <img src="recursos/github.png" alt="github" width="40px"> </a>
+			<p>&nbsp Raúl Gabriel Román Cabrera </p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
